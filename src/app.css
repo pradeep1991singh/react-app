@@ -1,0 +1,53 @@
+/*//////////////////////////////////////////////////////////////////
+[ FONT ]*/
+
+@font-face {
+  font-family: Lato-Regular;
+  src: url('assets/fonts/Lato/Lato-Regular.ttf');
+}
+
+@font-face {
+  font-family: Lato-Bold;
+  src: url('assets/fonts/Lato/Lato-Bold.ttf');
+}
+
+/*//////////////////////////////////////////////////////////////////
+[ RESTYLE TAG ]*/
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  --primary-color: #000;
+  --light-grey: #e4e1e1;
+  --grey: #ccc;
+  --secondary-color: #fff;
+  --default-padding: 10px;
+  --default-offset: 10px;
+  --default-border-radius: 5px;
+  --default-btn-color: linear-gradient(180deg, #ffff9d 0, #f8f095);
+}
+
+html, body {
+  font-family: sans-serif;
+}
+
+.loader {
+  color: var(--primary-color);
+}
+
+.main-container {
+  margin: 35px;
+}
+
+/*//////////////////////////////////////////////////////////////////
+[ main content ]*/
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

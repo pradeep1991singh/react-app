@@ -1,0 +1,88 @@
+/* Checkout component styles */
+
+.chat {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-gap: 10px;
+    height: 84vh;
+}
+
+/* Online users */
+
+.online-users-list {
+    height: 85vh;
+}
+
+.online-users-list h4 {
+    margin-bottom: var(--default-offset);
+}
+
+.online-users-list ul {
+    list-style: inside;
+}
+
+.online-users-list ul li span {
+    cursor: pointer;
+}
+
+.online-users-list ul li:hover {
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.online-users-list ul li.active, .online-users-list ul li span.active {
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+/* Conversation form */
+
+.conversation {
+    border-left: 2px solid var(--grey);
+    padding-left: 10%;
+}
+
+.converation-form {
+    background: var(--primary-color);
+    padding: 3px;
+    position: fixed;
+    bottom: 25px;
+}
+
+.converation-form input {
+    border: 0;
+    outline: none;
+    padding: var(--default-padding);
+}
+
+.converation-form input[type="submit"] {
+    background: rgb(130, 224, 255);
+    border: none;
+    padding: var(--default-padding);
+}
+
+.messages {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.messages li {
+    padding: 5px var(--default-padding);
+    border-radius: var(--default-border-radius);
+    margin-bottom: var(--default-offset);
+}
+
+.messages .sender-details {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+}
+
+.message {
+    margin-bottom: 5px;
+}
+
+.messages li.right {
+    background: #eee;
+}

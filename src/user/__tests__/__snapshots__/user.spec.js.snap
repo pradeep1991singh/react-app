@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`User should call render Login Component properly 1`] = `
+<div
+  className="form-container"
+>
+  <h4
+    className="page-title"
+  >
+    Login
+  </h4>
+  <form
+    name="login"
+    onSubmit={[Function]}
+  >
+    <input
+      name="email"
+      onChange={[Function]}
+      placeholder="Email"
+      required={true}
+      type="email"
+      value=""
+    />
+    <input
+      name="password"
+      onChange={[Function]}
+      placeholder="Password"
+      required={true}
+      type="password"
+      value=""
+    />
+    <input
+      type="submit"
+      value="Login"
+    />
+  </form>
+</div>
+`;
+
+exports[`User should call render SignUp Component properly 1`] = `
+<div
+  className="form-container"
+>
+  <h4>
+    Sign Up
+  </h4>
+  <form
+    name="sign-up"
+    onSubmit={[Function]}
+  >
+    <input
+      name="firstName"
+      onChange={[Function]}
+      placeholder="First Name"
+      required={true}
+      type="text"
+      value=""
+    />
+    <input
+      name="lastName"
+      onChange={[Function]}
+      placeholder="Last Name"
+      required={true}
+      type="text"
+      value=""
+    />
+    <input
+      name="email"
+      onChange={[Function]}
+      placeholder="Email"
+      required={true}
+      type="email"
+      value=""
+    />
+    <input
+      name="mobileNumber"
+      onChange={[Function]}
+      placeholder="Mobile Number"
+      required={true}
+      type="tel"
+      value=""
+    />
+    <input
+      name="password"
+      onChange={[Function]}
+      placeholder="Password"
+      required={true}
+      type="password"
+      value=""
+    />
+    <input
+      name="confirmPassword"
+      onChange={[Function]}
+      placeholder="Confirm Password"
+      required={true}
+      type="password"
+      value=""
+    />
+    <input
+      type="submit"
+      value="Sign Up"
+    />
+  </form>
+</div>
+`;

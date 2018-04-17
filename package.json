@@ -1,0 +1,72 @@
+{
+  "name": "react-app",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "babel-jest": "^21.0.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "enzyme": "^2.9.1",
+    "eslint": "^4.7.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.3.0",
+    "faker": "^4.1.0",
+    "flow-bin": "^0.69.0",
+    "flow-typed": "^2.4.0",
+    "glow": "^1.2.2",
+    "husky": "^0.14.3",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^21.2.1",
+    "jest-cli": "^21.2.1",
+    "lint-staged": "^4.2.1",
+    "puppeteer": "^1.3.0",
+    "react-dom": "^15.6.1",
+    "react-scripts": "1.0.13",
+    "react-test-renderer": "^15.6.1"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "firebase": "^4.12.1",
+    "moment": "^2.22.1",
+    "prettier": "^1.12.1",
+    "react": "^15.6.1",
+    "react-redux": "^5.0.6",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-toastify": "^3.4.3",
+    "redux": "^3.7.2",
+    "redux-logger": "^3.0.6",
+    "redux-saga": "^0.16.0",
+    "redux-thunk": "^2.2.0",
+    "socket.io": "^2.1.0",
+    "socket.io-client": "^2.1.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "jest",
+    "debug": "NODE_ENV=debug npm test",
+    "lint": "glow",
+    "eject": "react-scripts eject",
+    "precommit": "lint-staged",
+    "prepush": "npm test && npm run lint",
+    "predeploy": "npm run build"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --single-quote --no-semi --trailing-comma es5 --write \"{app,__{tests,mocks}__}/**/*.js\"",
+      "git add"
+    ]
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/file-mock.js",
+      "\\.(css|less)$": "identity-obj-proxy"
+    },
+    "setupFiles": [
+      "<rootDir>/__mocks__/setup.js"
+    ]
+  }
+}
