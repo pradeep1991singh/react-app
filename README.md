@@ -39,4 +39,4 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 * Development app [http://localhost:3000](http://localhost:3000)
 
-* Hosted app [https://react-app.stackskull.com](https://react-app.stackskull.com)
+* Hosted app [https://fir-web-b1d0c.firebaseapp.com](https://fir-web-b1d0c.firebaseapp.com)
